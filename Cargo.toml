@@ -1,10 +1,10 @@
 [package]
 name = "eliza_error"
-version = "0.99.0"
+version = "0.99.1"
 authors = ["Eliza Error Contributors <eliza@elizas.website>"]
 edition = "2018"
 readme = "README.md"
-license-file = "LICENSE"
+license = "WTFPL"
 repository = "https://github.com/hawkw/eliza_error"
 homepage = "https://github.com/hawkw/eliza_error"
 keywords = ["error", "exception", "failure"]
