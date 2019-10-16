@@ -46,7 +46,9 @@
 //!
 //! - `eliza_error` has no dependencies!
 //! - `eliza_error` can throw exceptions!
-//! - `eliza_error` will be 0.1 Soon(TM)!
+//! - `eliza_error` [will support backtraces soon][backtrace]!
+//!
+//! [backtrace]: https://github.com/rust-lang/rust/issues/53487
 
 /// Construct a new error with a message.
 #[macro_export]
