@@ -65,6 +65,25 @@ macro_rules! throw {
 /// An error.
 pub type Error = Box<dyn std::error::Error + Send + Sync + 'static>;
 
+/// A special return type annotation indicating that a function may throw an
+/// exception.
+///
+/// When calling functions whose return type is annotated with `Throws`, it is
+/// necessary to use the "try" operator, `?`. For example:
+/// ```rust
+/// use eliza_error::{throw, Throws};
+///
+/// # fn some_condition() -> bool { true }
+/// fn throwing_function() -> Throws<String> {
+///     if some_condition() {
+///         throw!("there was an error!");
+///     }
+///     // ...
+///     # Ok(String::from("im successfully"))
+/// }
+/// ```
+pub type Throws<T> = Result<T>;
+
 /// A cool eliza error, with a message.
 #[doc(hidden)]
 pub struct ElizaError {

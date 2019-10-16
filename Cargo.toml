@@ -1,6 +1,6 @@
 [package]
 name = "eliza_error"
-version = "0.99.1"
+version = "0.99.2"
 authors = ["Eliza Error Contributors <eliza@elizas.website>"]
 edition = "2018"
 readme = "README.md"
